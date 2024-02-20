@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parabéns anjola!!</title>
+    <link rel="stylesheet" href="assets/css/output.css">
+    <script src="assets/js/confetti.min.js"></script>
+</head>
+<body>
+    <div class="w-full h-svh flex flex-col items-center justify-end gap-4">
+        <h1 class="text-6xl font-bold">Parabéns anjola!!</h1>
+        <h2 class="text-4xl font-semibold">Aprovado em geografia na usp!!!</h2>
+        <img src="assets/images/anjola.jpeg" alt="Anjola" id="anjola" class="w-full h-auto aspect-square cursor-pointer max-w-96">
+    </div>
+</body>
+
+<script>
+    // Pass in the id of an element
+let confetti = new Confetti('anjola');
+
+// Edit given parameters
+confetti.setCount(100);
+confetti.setSize(2);
+confetti.setPower(25);
+confetti.setFade(false);
+confetti.destroyTarget(false);
+</script>
+
+</html>
