@@ -8,17 +8,17 @@
     <link rel="stylesheet" href="assets/css/output.css">
     <script src="assets/js/confetti.min.js"></script>
 </head>
-<body>
+<body id="body" class="cursor-pointer">
     <div class="w-full h-svh flex flex-col items-center text-center justify-end gap-4">
         <h1 class="text-6xl font-bold">Parabéns anjola!!</h1>
         <h2 class="text-4xl font-semibold">Aprovado em geografia na usp!!!</h2>
-        <img src="assets/images/anjola.jpeg" alt="Anjola" id="anjola" class="w-full h-auto aspect-square cursor-pointer max-w-96">
+        <img src="assets/images/anjola.jpeg" alt="Anjola" id="anjola" class="w-full h-auto aspect-square max-w-96">
     </div>
 </body>
 
 <script>
     // Pass in the id of an element
-let confetti = new Confetti('anjola');
+let confetti = new Confetti('body');
 
 // Edit given parameters
 confetti.setCount(100);
